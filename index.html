@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="row">
+        <h1>Pomodoro Timer</h1>
+        <!-- <button id="userBtn" onclick="displayLogin()">
+            <img src="images/user.png" id="user">
+        </button> -->
+        <button id="settingsBtn" onclick="displaySettings()">
+            <img src="images/settings.png" id="settings">
+        </button>
+    </div>
+</header>
+
+<div class="mode">
+    <button id="focusBtn" onclick="setFocus()">Focus</button>
+    <button id="relaxBtn" onclick="setRelax()">Relax</button>
+    <button id="vacationBtn" onclick="setVacation()">Vacation</button>
+</div>
+
+<div class="app">
+    <div class="timer">
+        <ul>
+            <li><span id="minutes">00</span></li>
+            <li>:</li>
+            <li><span id="seconds">00</span></li>
+        </ul>
+    </div>
+    <button id="begin" onclick="executeTimer()">Begin</button>
+    <button id="reset" onclick="resetTimer()">Reset</button>
+</div>
+
+<!-- <div class="todo">
+    <h1>TO-DO</h1>
+</div> -->
+
+<!-- <div class="loginPanel">
+
+</div> -->
+
+<div class="settingsPanel">
+    <div class="settingsRow">
+        <h1>Settings</h1>
+        <button id="settingsExit" onclick="closeSettings()">X</button>
+    </div>
+    <h2><i>Timer (minutes)</i></h2>
+    <div class="modesText">
+        <h3>Focus</h3>
+        <h3>Relax</h3>
+        <h3>Vacation</h3>
+    </div>
+    <div class="inputModes">
+        <input type="number" id="inputFocus" placeholder="Enter duration" min="1" max="60">
+        <input type="number" id="inputRelax" placeholder="Enter duration" min="1" max="60">
+        <input type="number" id="inputVacation" placeholder="Enter duration" min="1" max="60">
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
